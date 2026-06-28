@@ -1,4 +1,4 @@
-FROM hub-mirror.c.163.com/library/node:18-alpine
+FROM cr.volces.com/library/node:18-alpine
 
 WORKDIR /opt/application
 
