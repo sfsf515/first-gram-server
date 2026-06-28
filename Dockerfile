@@ -6,8 +6,10 @@ COPY package.json .
 RUN npm config set registry https://registry.npmmirror.com && npm install
 
 COPY server.js .
-COPY run.sh .
-RUN chmod +x run.sh
+
+RUN echo '#!/bin/sh' > /opt/application/run.sh && \
+    echo 'cd /opt/application' >> /opt/application/run.sh && \
+    echo 'node server.js' >> /opt/application/run.sh && \
+    chmod +x /opt/application/run.sh
 
 EXPOSE 3000
-CMD ["bash", "run.sh"]
