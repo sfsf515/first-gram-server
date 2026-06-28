@@ -12,4 +12,4 @@ RUN echo '#!/bin/sh' > /opt/application/run.sh && \
     echo 'node server.js' >> /opt/application/run.sh && \
     chmod +x /opt/application/run.sh
 
-EXPOSE 3000
+EXPOSE 8000
