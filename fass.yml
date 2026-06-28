@@ -1,6 +1,0 @@
-name: first-gram-server
-runtime: nodejs18
-entry: server.js
-triggers:
-  - type: websocket
-    port: 3000
