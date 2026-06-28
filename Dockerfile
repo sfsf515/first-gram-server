@@ -1,4 +1,4 @@
-FROM cr.volces.com/library/node:18-alpine
+FROM public-cn-beijing.cr.volces.com/public/node:18-alpine
 
 WORKDIR /opt/application
 
